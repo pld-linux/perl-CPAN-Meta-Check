@@ -1,0 +1,11 @@
+--- CPAN-Meta-Check-0.005/lib/CPAN/Meta/Check.pm~	2013-04-22 17:27:57.000000000 +0200
++++ CPAN-Meta-Check-0.005/lib/CPAN/Meta/Check.pm	2013-06-10 16:10:21.732244485 +0200
+@@ -10,7 +10,7 @@
+ our @EXPORT_OK = qw/check_requirements requirements_for verify_dependencies/;
+ our %EXPORT_TAGS = (all => [ @EXPORT, @EXPORT_OK ] );
+ 
+-use CPAN::Meta::Requirements 2.120920;
++use CPAN::Meta::Requirements;
+ use Module::Metadata;
+ 
+ sub _check_dep {
