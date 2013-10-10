@@ -7,13 +7,13 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	CPAN::Meta::Check - Verify requirements in a CPAN::Meta object
 Name:		perl-CPAN-Meta-Check
-Version:	0.005
-Release:	2
+Version:	0.007
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/CPAN/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d6c84386c77298468d35a4e03eda6719
+# Source0-md5:	56f71df79cea8d308a552b3eb996deb0
 Patch0:		fixdeps.patch
 URL:		http://search.cpan.org/dist/CPAN-Meta-Check/
 BuildRequires:	perl-devel >= 1:5.8.0
