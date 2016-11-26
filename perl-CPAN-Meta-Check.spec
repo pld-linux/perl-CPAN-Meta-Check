@@ -8,13 +8,13 @@
 Summary:	CPAN::Meta::Check - Verify requirements in a CPAN::Meta object
 Summary(pl.UTF-8):	CPAN::Meta::Check - sprawdzanie wymagań w obiekcie CPAN::Meta
 Name:		perl-CPAN-Meta-Check
-Version:	0.013
+Version:	0.014
 Release:	1
-# same as perl
+# same as perl 5
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/CPAN/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	7bf7867f9e898e6398b9c2e8d668bb0b
+# Source0-md5:	ccd4448a7b08e1e3ef6f475030b282c9
 Patch0:		fixdeps.patch
 URL:		http://search.cpan.org/dist/CPAN-Meta-Check/
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.30
@@ -22,7 +22,9 @@ BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl(Exporter) >= 5.57
-BuildRequires:	perl-CPAN-Meta >= 2.120920
+BuildRequires:	perl-CPAN-Meta >= 2.132830
+BuildRequires:	perl-CPAN-Meta-Requirements >= 2.121
+BuildRequires:	perl-Module-Metadata >= 1.000023
 BuildRequires:	perl-Test-Deep
 BuildRequires:	perl-Test-Simple >= 0.88
 %endif
