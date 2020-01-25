@@ -4,7 +4,6 @@
 #
 %define		pdir	CPAN
 %define		pnam	Meta-Check
-%include	/usr/lib/rpm/macros.perl
 Summary:	CPAN::Meta::Check - Verify requirements in a CPAN::Meta object
 Summary(pl.UTF-8):	CPAN::Meta::Check - sprawdzanie wymagań w obiekcie CPAN::Meta
 Name:		perl-CPAN-Meta-Check
