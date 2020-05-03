@@ -15,10 +15,11 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/CPAN/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ccd4448a7b08e1e3ef6f475030b282c9
 Patch0:		fixdeps.patch
-URL:		http://search.cpan.org/dist/CPAN-Meta-Check/
+URL:		https://metacpan.org/release/CPAN-Meta-Check
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.30
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl(Exporter) >= 5.57
 BuildRequires:	perl-CPAN-Meta >= 2.132830
